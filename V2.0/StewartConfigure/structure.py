@@ -1,0 +1,9 @@
+# Basic parameter setting for Stewart Platform with Link-mechanism Legs
+BOTTOM_RADIUS = 119.365
+TOP_RADIUS = 74.330
+BOTTOM_ANGLE = 0.546
+TOP_ANGLE = 0.343
+LINKA = 75.22
+LINKB = 120.00
+ZEROHEIGHT = 208.8
+SERVOHEIGHT = 41.5
