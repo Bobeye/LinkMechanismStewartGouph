@@ -1,7 +1,7 @@
 # LinkMechanismStewartGouph
 6-DOF Stewart Platform with Link Mechanism Legs
 
-#####################################################
+-----------------------------------------------------------------------
 V1.0 -- from September, 2015
 
 v1.0 design and prototyping of a 6-DOF Stewart platform with link-mechanism (fixed-rotatory) legs. 
