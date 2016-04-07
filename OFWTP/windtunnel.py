@@ -4,10 +4,21 @@ import time
 import serial
 import serial.tools.list_ports
 
-def CONNECT_WINDTUNNEL():
+def WIN_CONNECT_WINDTUNNEL():
 	PortsList = list(serial.tools.list_ports.comports())
-	print(PortsList)
-	if "Arduino" in PortsList
+	PortsNum = len(PortsList)
+	for i in range(PortsNum):
+		PortsList[i] = str(PortsList[i])
+		if "Arduino" in PortsList[i]:
+			print ("COM Sequence:",i,"Device Info:",PortsList[i])
+		else:
+			print ("no arduino mega detected")
+	COMtoConnect = input("Choose the right COM sequence for wind tunnrl control...")
+	COMtoConnect = int(COMtoConnect)
+	print("Trying to connect to", PortsList[COMtoConnect][:4])
+	WTport = serial.Serial(PortsList[COMtoConnect][:4], 9600)
+
+	# if "Arduino" in PortsList
 # for p in PortsList:
 
 # if "Arduino" in p[1]:
@@ -32,5 +43,5 @@ def WIND(windspeed):
 
 
 if __name__=='__main__':
-	CONNECT_WINDTUNNEL()
+	WIN_CONNECT_WINDTUNNEL()
 
