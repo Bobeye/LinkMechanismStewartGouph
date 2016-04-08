@@ -16,7 +16,8 @@ def WIN_CONNECT_WINDTUNNEL():
 	COMtoConnect = input("Choose the right COM sequence for wind tunnrl control...")
 	COMtoConnect = int(COMtoConnect)
 	print("Trying to connect to", PortsList[COMtoConnect][:4])
-	WTport = serial.Serial(PortsList[COMtoConnect][:4], 9600)
+	return PortsList[COMtoConnect][:4]
+	
 
 def LINUX_CONNECT_WINDTUNNEL():
 	PortsList = list(serial.tools.list_ports.comports())
@@ -25,7 +26,7 @@ def LINUX_CONNECT_WINDTUNNEL():
 		print("COM Sequence:",i,"Device Info:",PortsList[i])
 	COMtoConnect = input("Choose the right COM sequence for wind tunnrl control...")
 	COMtoConnect = int(COMtoConnect)
-	print("Trying to connect to", PortsList[COMtoConnect])
+	print("Trying to connect to", PortsList[COMtoConnect][0])
 
 
 # WTport = serial.Serial('COM9', 9600)
@@ -39,7 +40,10 @@ def LINUX_CONNECT_WINDTUNNEL():
 # 1020	6.85
 # 1175	6
 # 1350	4.78
+# WTport = serial.Serial(PortsList[COMtoConnect][:4], 9600)
+
 def WIND(windspeed):
+
 	print("Current Wind Speed: ", windspeed)
 
 

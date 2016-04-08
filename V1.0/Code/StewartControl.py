@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy.linalg import inv
 import itertools
-import pypot.dynamixel
 
 
 # Mechanical Parameters
