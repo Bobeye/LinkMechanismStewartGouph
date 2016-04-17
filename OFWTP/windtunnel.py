@@ -29,12 +29,6 @@ def LINUX_CONNECT_WINDTUNNEL():
 	print("Trying to connect to", PortsList[COMtoConnect][0])
 
 
-# WTport = serial.Serial('COM9', 9600)
-# WTport.write('(',890,')')
-
-# print("Wind Tunnel Connected")
-
-
 # Wind Speed Lookup Table
 # 890	8
 # 1020	6.85
@@ -49,5 +43,16 @@ def WIND(windspeed):
 
 
 if __name__=='__main__':
-	WIN_CONNECT_WINDTUNNEL()
+	WTport = WIN_CONNECT_WINDTUNNEL()
+	ControlWTport = serial.Serial(WTport, 9600)
+	print("Wind Turbine Connected")
+	for i in range(2):
+		a = "(2000)"
+		ControlWTport.write(a)
+		# ControlWTport.write('(')
+		# ControlWTport.write('890')
+		# ControlWTport.write(')')	
+		time.sleep(1)
+		print("giving wind speed command")
+
 
