@@ -1,6 +1,8 @@
-# import windtunnel as WT
+import windtunnel as WT
 import oceanwave as OC
 import windvelocity as WV
+import inversekinematics as IK
+# import movestewart as MS
 import matplotlib.pyplot as plt
 import math
 import numpy as np
@@ -13,7 +15,7 @@ import numpy as np
 # plt.show()
 
 
-# wind speed map
+# wind speed map setup	
 print(WV.CHANGE_WIND())
 
 

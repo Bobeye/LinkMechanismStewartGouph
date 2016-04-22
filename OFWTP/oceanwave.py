@@ -84,3 +84,9 @@ def IRREGULAR_WAVE(windspeed,currenttime):
 	else:
 		IW_Zalpha = IW_Zalpha % (PI/2.0)
 	return [IW_A,IW_alpha,IW_Z,IW_Zalpha]
+
+# def main():
+	
+
+# if __name__=='__main__':
+# 	main()

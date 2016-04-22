@@ -1,7 +1,6 @@
 import configure as CO 
 
 
-
 def INVERSE_KINEMATICS(TopPlateMotion):
 	configure = CO.CONFIGURE()
 	InitialCordinates=configure.OriginPosition()
