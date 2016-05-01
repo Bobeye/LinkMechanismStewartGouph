@@ -54,8 +54,8 @@ def OCEAN_SPECTRUM(sigHeight,Tpeak,omega):
 
 def WIND_TO_WAVE(windspeed):
 	WW_windspeed = windspeed
-	WW_sig_height = 0.21 * (IW_windspeed**2) / G
-	WW_peak_time = 2 * PI * IW_windspeed / (0.877 * G)
+	WW_sig_height = 0.21 * (WW_windspeed**2) / G
+	WW_peak_time = 2 * PI * WW_windspeed / (0.877 * G)
 	return [WW_sig_height,WW_peak_time]
 
 def IRREGULAR_WAVE(windspeed,currenttime):
