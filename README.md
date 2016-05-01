@@ -3,7 +3,7 @@
 
 -----------------------------------------------------------------------
 Dynamixel connection is using pypot. You can build or install through pip:
-pip install pypot
+  pip install pypot
 -----------------------------------------------------------------------
 V1.0 -- from September, 2015
 
