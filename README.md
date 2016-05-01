@@ -21,4 +21,4 @@ A sample of using Newton-Raphson method for forward kinematics and another samle
 ----------------------------------------------------------------------
 OFWTP -- from March, 2016
 
-The irregular ocean wave modeling with Stewart platform based on JONSWAP Ocean Spctrum is developed and implemented on wind tunnel tests with offshore floating wind turbine platform at Control and Energy Systems Center (SESC) at Case Western Reserve University.
+The irregular ocean wave modeling with Stewart platform based on JONSWAP Ocean Spctrum is developed and implemented on wind tunnel tests with offshore floating wind turbine platform at Control and Energy Systems Center (CESC) at Case Western Reserve University.
