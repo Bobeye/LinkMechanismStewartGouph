@@ -6,7 +6,9 @@ Dynamixel connection is using pypot. You can build or install through pip:
 ```
   pip install pypot
 ```
-numpy may also be requied for some of the functions.
+
+Numpy may also be requied for some of the functions
+
 -----------------------------------------------------------------------
 V1.0 -- from September, 2015
 
