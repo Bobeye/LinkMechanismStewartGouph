@@ -16,8 +16,8 @@ ________________________________________________________________________________
   configure = CO.CONFIGURE()
   InitialCordinates = configure.OriginPosition()
   CO_BottomC=InitialCordinates[0] # Initial bottom plate coordinates
-	CO_TopC=InitialCordinates[1]    # Initial top plate coordinates
-	CO_ServoC=InitialCordinates[2]  # Initial servo coordinates
+  CO_TopC=InitialCordinates[1]    # Initial top plate coordinates
+  CO_ServoC=InitialCordinates[2]  # Initial servo coordinates
 ```
 
 ________________________________________________________________________________________
@@ -25,5 +25,5 @@ ________________________________________________________________________________
 ```python
   import configure as CO
   AimTopplate = configure.TopplateMotion(CO_TopC, TopMotion) # Topplate rotation & translation
-	AimServoPos = configure.InverseKinematics(AimTopplate, CO_ServoC, CO.LINKA, CO.LINKB) # inverse kinematics
+  AimServoPos = configure.InverseKinematics(AimTopplate, CO_ServoC, CO.LINKA, CO.LINKB) # inverse kinematics
 ```
