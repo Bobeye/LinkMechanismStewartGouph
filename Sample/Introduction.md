@@ -12,7 +12,7 @@ For controlling dynamixel ax-12a servo with python, please install pypot first:
   pip install pypot
 ```
 ___________________________________________________________________________________
-1. Confifure the STP
+*Confifure the STP*
 ```python
   import configure as CO
   configure = CO.CONFIGURE()
@@ -23,7 +23,7 @@ ________________________________________________________________________________
 ```
 
 ________________________________________________________________________________________
-2. Inverse Kinematics
+*Inverse Kinematics*
 ```python
   import configure as CO
   AimTopplate = configure.TopplateMotion(CO_TopC, TopMotion) # Topplate rotation & translation
