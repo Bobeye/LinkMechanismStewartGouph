@@ -12,7 +12,7 @@ For controlling dynamixel ax-12a servo with python, please install pypot first:
   pip install pypot
 ```
 ___________________________________________________________________________________
-*Confifure the STP*
+*Configure the STP*
 ```python
   import configure as CO
   configure = CO.CONFIGURE()
